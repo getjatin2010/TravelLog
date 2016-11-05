@@ -75,7 +75,9 @@ public class PreProcessing {
             {
                 ImpData data = new ImpData();
                 data.id = tweet.id;
-                data.created_at = tweet.created_at;
+                data.month = tweet.created_at.substring(4,7);
+                data.year = tweet.created_at.substring(26,30);
+                data.date = tweet.created_at.substring(8,10);
                 data.tweetingCountry = tweetingLocation;
                 data.userCountry = userLocation;
                 storeResultInFile(data);
