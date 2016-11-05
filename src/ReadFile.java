@@ -1,8 +1,6 @@
 import com.google.gson.Gson;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 /**
@@ -10,35 +8,52 @@ import java.util.ArrayList;
  */
 public class ReadFile {
 
+    public static boolean READ_FILE = true;
+    public static boolean BROLD = false;
     public static Gson gson = new Gson();
     public static ArrayList<Tweet> readFile(String file) throws IOException {
 
         BufferedReader bf = new BufferedReader((new FileReader(file)));
         String line = "";
         ArrayList<Tweet> tweets = new ArrayList<>();
-        Integer.parseInt(bf.readLine());
-        StringBuffer stringBuffer =  new StringBuffer();
-        while ((line = bf.readLine()) != null)
+        while (READ_FILE)
         {
+            line = bf.readLine();
             try
             {
-                Integer.parseInt(line);
-                storeJson(stringBuffer,tweets);
-                stringBuffer = new StringBuffer();
-            }
+                if(line!=null && line!=" ") {
+                    BROLD = true;
+                    System.out.println(line);
+                    storeJson(line, tweets);
+
+                }
+                else {
+
+                    if(BROLD) {
+                        BROLD = false;
+                        emptyFile(file);
+                        bf = new BufferedReader((new FileReader(file)));
+                    }
+                        Thread.sleep(3000);
+                }
+                }
             catch (Exception e)
             {
-                 stringBuffer.append(line);
             }
         }
         return tweets;
     }
-    private static void storeJson(StringBuffer s, ArrayList<Tweet> tweets)
+    private static void storeJson(String s, ArrayList<Tweet> tweets)
     {
-        Tweet tweet = gson.fromJson(s.toString(), Tweet.class);
-        if(tweet.)
-        tweet.json = s.toString();
+        Tweet tweet = gson.fromJson(s, Tweet.class);
+        tweet.json = s;
         tweets.add(tweet);
+    }
+
+    private static void emptyFile(String file) throws FileNotFoundException {
+        PrintWriter writer = new PrintWriter(file);
+        writer.print("");
+        writer.close();
     }
 
 }
