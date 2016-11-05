@@ -1,0 +1,5 @@
+{"created_at":"Sat Nov 05 10:23:53 +0000 2016","id":"794847699560497152","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 10:23:55 +0000 2016","id":"794847705973587968","userCountry":"Germany","tweetingCountry":"Italy"}
+{"created_at":"Sat Nov 05 10:23:55 +0000 2016","id":"794847707718447105","userCountry":"Russia","tweetingCountry":"Russia"}
+{"created_at":"Sat Nov 05 10:23:55 +0000 2016","id":"794847708305494016","userCountry":"United States","tweetingCountry":"Indonesia"}
+{"created_at":"Sat Nov 05 10:23:56 +0000 2016","id":"794847712881426432","userCountry":"Thailand","tweetingCountry":"Japan"}
