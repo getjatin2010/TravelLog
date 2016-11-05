@@ -1,6 +1,5 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.util.Map;
 
 /**
  * Created by jatin on 18/10/16.
@@ -10,9 +9,60 @@ public class StartClass {
     {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         //final  String  line = bf.readLine();
-        final String  line = "/home/jatin/IdeaProjects/TravelLog/src/test.txt";
+        final String  line = "/home/poornima/travelLogData.txt";
 
 
+
+        //*******WRITES TWITTER DATA TO THE FILE*****************
+
+        Thread runTweetScript = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                String s =null;
+                BufferedWriter bw = null;
+
+                try {
+
+                    // run the Unix "ps -ef" command
+                    // using the Runtime exec method:
+                    bw = new BufferedWriter(new FileWriter("/home/poornima/travelLogData.txt", true));
+                    Process p = Runtime.getRuntime().exec("python /home/poornima/twitter_streaming.py");
+
+                    BufferedReader stdInput = new BufferedReader(new
+                            InputStreamReader(p.getInputStream()));
+
+                    BufferedReader stdError = new BufferedReader(new
+                            InputStreamReader(p.getErrorStream()));
+
+                    // read the output from the command
+                    //System.out.println("Here is the standard output of the command:\n");
+
+                    while ((s = stdInput.readLine()) != null) {
+                        //System.out.println(s);
+                        bw.write(s);
+                        bw.newLine();
+                    }
+
+
+
+                    // read any errors from the attempted command
+                    System.out.println("Here is the standard error of the command (if any):\n");
+                    while ((s = stdError.readLine()) != null) {
+                        System.out.println(s);
+                    }
+
+                    System.exit(0);
+                }
+                catch (IOException e) {
+                    System.out.println("exception happened - here's what I know: ");
+                    e.printStackTrace();
+                    System.exit(-1);
+                }
+            }
+        });
+        runTweetScript.start();
+
+    //*******************************************************************
 
         Thread preprocessing = new Thread(new Runnable() {
             @Override

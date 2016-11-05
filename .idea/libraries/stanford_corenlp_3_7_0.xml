@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="stanford-corenlp-3.7.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/stanford-corenlp-3.7.0.jar!/" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/stanford-corenlp-3.7.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/stanford-corenlp-3.7.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23-src.zip!/ejml-0.23/benchmarks/src" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23-src.zip!/ejml-0.23/benchmarks/test" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23-src.zip!/ejml-0.23/examples/src" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23-src.zip!/ejml-0.23/examples/test" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23-src.zip!/ejml-0.23/experimental/src" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23-src.zip!/ejml-0.23/experimental/test" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23-src.zip!/ejml-0.23/src" />
+      <root url="jar://$USER_HOME$/stanford-corenlp-full-2016-10-31/ejml-0.23-src.zip!/ejml-0.23/test" />
+    </SOURCES>
+  </library>
+</component>

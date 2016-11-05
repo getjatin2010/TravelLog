@@ -7,5 +7,4 @@ public class ImpData {
     String id;
     String userCountry;
     String tweetingCountry;
-
 }

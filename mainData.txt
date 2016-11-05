@@ -3,3 +3,63 @@
 {"created_at":"Sat Nov 05 10:23:55 +0000 2016","id":"794847707718447105","userCountry":"Russia","tweetingCountry":"Russia"}
 {"created_at":"Sat Nov 05 10:23:55 +0000 2016","id":"794847708305494016","userCountry":"United States","tweetingCountry":"Indonesia"}
 {"created_at":"Sat Nov 05 10:23:56 +0000 2016","id":"794847712881426432","userCountry":"Thailand","tweetingCountry":"Japan"}
+{"created_at":"Sat Nov 05 10:44:40 +0000 2016","id":"794852930356707328","userCountry":"France","tweetingCountry":"France"}
+{"created_at":"Sat Nov 05 10:44:43 +0000 2016","id":"794852943107235840","userCountry":"Malaysia","tweetingCountry":"Malaysia"}
+{"created_at":"Sat Nov 05 10:44:44 +0000 2016","id":"794852946525782016","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 10:44:45 +0000 2016","id":"794852949109325824","userCountry":"United States","tweetingCountry":"Philippines"}
+{"created_at":"Sat Nov 05 10:44:46 +0000 2016","id":"794852955048570880","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"created_at":"Sat Nov 05 10:44:48 +0000 2016","id":"794852962002731008","userCountry":"Indonesia","tweetingCountry":"Indonesia"}
+{"created_at":"Sat Nov 05 10:44:50 +0000 2016","id":"794852969950887936","userCountry":"France","tweetingCountry":"France"}
+{"created_at":"Sat Nov 05 10:44:51 +0000 2016","id":"794852974480785408","userCountry":"Turkey","tweetingCountry":"Turkey"}
+{"created_at":"Sat Nov 05 10:44:53 +0000 2016","id":"794852982298963968","userCountry":"Malaysia","tweetingCountry":"Indonesia"}
+{"created_at":"Sat Nov 05 10:44:57 +0000 2016","id":"794853000200196096","userCountry":"United States","tweetingCountry":"Brazil"}
+{"created_at":"Sat Nov 05 10:44:58 +0000 2016","id":"794853004851773440","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"created_at":"Sat Nov 05 10:45:00 +0000 2016","id":"794853012892225536","userCountry":"Australia","tweetingCountry":"Australia"}
+{"created_at":"Sat Nov 05 10:45:01 +0000 2016","id":"794853018571341824","userCountry":"Finland","tweetingCountry":"Australia"}
+{"created_at":"Sat Nov 05 10:45:03 +0000 2016","id":"794853025592512512","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 10:45:03 +0000 2016","id":"794853025881976832","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 10:45:04 +0000 2016","id":"794853030923476992","userCountry":"Turkey","tweetingCountry":"Turkey"}
+{"created_at":"Sat Nov 05 10:45:06 +0000 2016","id":"794853036090937344","userCountry":"Turkey","tweetingCountry":"Turkey"}
+{"created_at":"Sat Nov 05 10:45:13 +0000 2016","id":"794853067510390784","userCountry":"Puerto Rico","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 10:45:29 +0000 2016","id":"794853135869218816","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 10:45:30 +0000 2016","id":"794853139937628160","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 10:45:31 +0000 2016","id":"794853142462664704","userCountry":"Thailand","tweetingCountry":"Thailand"}
+{"created_at":"Sat Nov 05 10:45:33 +0000 2016","id":"794853148930310144","userCountry":"Australia","tweetingCountry":"Australia"}
+{"created_at":"Sat Nov 05 10:45:33 +0000 2016","id":"794853150704312320","userCountry":"United Kingdom","tweetingCountry":"Dominican Republic"}
+{"created_at":"Sat Nov 05 10:45:39 +0000 2016","id":"794853177401217024","userCountry":"Turkey","tweetingCountry":"Cyprus"}
+{"created_at":"Sat Nov 05 10:45:46 +0000 2016","id":"794853203967885312","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 10:45:46 +0000 2016","id":"794853206664757249","userCountry":"France","tweetingCountry":"India"}
+{"created_at":"Sat Nov 05 11:20:44 +0000 2016","id":"794862005324828672","userCountry":"France","tweetingCountry":"Germany"}
+{"created_at":"Sat Nov 05 11:20:46 +0000 2016","id":"794862014141231104","userCountry":"United Arab Emirates","tweetingCountry":"Qatar"}
+{"created_at":"Sat Nov 05 11:20:52 +0000 2016","id":"794862036605767680","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 11:20:52 +0000 2016","id":"794862038820397056","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 11:20:56 +0000 2016","id":"794862055291383808","userCountry":"Indonesia","tweetingCountry":"Indonesia"}
+{"created_at":"Sat Nov 05 11:20:52 +0000 2016","id":"794862037746716672","userCountry":"Malaysia","tweetingCountry":"Malaysia"}
+{"created_at":"Sat Nov 05 11:20:58 +0000 2016","id":"794862062203703297","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 11:20:53 +0000 2016","id":"794862041274208256","userCountry":"South Africa","tweetingCountry":"South Africa"}
+{"created_at":"Sat Nov 05 11:20:58 +0000 2016","id":"794862064284143616","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"created_at":"Sat Nov 05 11:21:00 +0000 2016","id":"794862070583984129","userCountry":"Malaysia","tweetingCountry":"Malaysia"}
+{"created_at":"Sat Nov 05 11:21:01 +0000 2016","id":"794862078427217920","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 11:21:03 +0000 2016","id":"794862085968510976","userCountry":"Thailand","tweetingCountry":"Thailand"}
+{"created_at":"Sat Nov 05 11:21:05 +0000 2016","id":"794862094374096896","userCountry":"Thailand","tweetingCountry":"Thailand"}
+{"created_at":"Sat Nov 05 11:21:08 +0000 2016","id":"794862107284094976","userCountry":"Australia","tweetingCountry":"Australia"}
+{"created_at":"Sat Nov 05 11:21:09 +0000 2016","id":"794862109922361345","userCountry":"Syria","tweetingCountry":"Philippines"}
+{"created_at":"Sat Nov 05 11:21:09 +0000 2016","id":"794862111411183616","userCountry":"Canada","tweetingCountry":"Philippines"}
+{"created_at":"Sat Nov 05 11:21:10 +0000 2016","id":"794862113584021504","userCountry":"Thailand","tweetingCountry":"Thailand"}
+{"created_at":"Sat Nov 05 11:21:10 +0000 2016","id":"794862116100403200","userCountry":"Italy","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 11:24:02 +0000 2016","id":"794862836019130369","userCountry":"Indonesia","tweetingCountry":"Indonesia"}
+{"created_at":"Sat Nov 05 11:24:02 +0000 2016","id":"794862833968279552","userCountry":"Germany","tweetingCountry":"Germany"}
+{"created_at":"Sat Nov 05 11:24:03 +0000 2016","id":"794862840595226624","userCountry":"Brazil","tweetingCountry":"Brazil"}
+{"created_at":"Sat Nov 05 11:24:04 +0000 2016","id":"794862845833854979","userCountry":"Spain","tweetingCountry":"Indonesia"}
+{"created_at":"Sat Nov 05 11:24:05 +0000 2016","id":"794862848275083264","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"created_at":"Sat Nov 05 11:24:07 +0000 2016","id":"794862856080674816","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 11:24:08 +0000 2016","id":"794862861222838272","userCountry":"Argentina","tweetingCountry":"Argentina"}
+{"created_at":"Sat Nov 05 11:24:10 +0000 2016","id":"794862869624061953","userCountry":"United States","tweetingCountry":"Canada"}
+{"created_at":"Sat Nov 05 11:24:11 +0000 2016","id":"794862874954989568","userCountry":"Argentina","tweetingCountry":"Argentina"}
+{"created_at":"Sat Nov 05 11:24:12 +0000 2016","id":"794862878163615744","userCountry":"Trinidad and Tobago","tweetingCountry":"Trinidad and Tobago"}
+{"created_at":"Sat Nov 05 11:24:14 +0000 2016","id":"794862887197999104","userCountry":"Japan","tweetingCountry":"Japan"}
+{"created_at":"Sat Nov 05 11:24:15 +0000 2016","id":"794862889811251204","userCountry":"Spain","tweetingCountry":"Spain"}
+{"created_at":"Sat Nov 05 11:24:15 +0000 2016","id":"794862890742411264","userCountry":"United States","tweetingCountry":"United States"}
+{"created_at":"Sat Nov 05 11:24:15 +0000 2016","id":"794862891421802496","userCountry":"Philippines","tweetingCountry":"Philippines"}
+{"created_at":"Sat Nov 05 11:24:17 +0000 2016","id":"794862899374202880","userCountry":"United States","tweetingCountry":"Denmark"}
+{"created_at":"Sat Nov 05 11:24:17 +0000 2016","id":"794862898250035202","userCountry":"United States","tweetingCountry":"United States"}
