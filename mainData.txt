@@ -541,3 +541,121 @@
 {"month":"Nov","year":"2016","date":"06","id":"795221180936519680","userCountry":"Colombia","tweetingCountry":"Spain"}
 {"month":"Nov","year":"2016","date":"06","id":"795221180164796416","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
 {"month":"Nov","year":"2016","date":"06","id":"795221142004867072","userCountry":"Brazil","tweetingCountry":"Brazil"}
+{"month":"Nov","year":"2016","date":"06","id":"795221187760635904","userCountry":"Canada","tweetingCountry":"Canada"}
+{"month":"Nov","year":"2016","date":"06","id":"795293667745468416","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293676603867137","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293679388794880","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293682165485569","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293687664152578","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293691539648512","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293693213188096","userCountry":"Italy","tweetingCountry":"Italy"}
+{"month":"Nov","year":"2016","date":"06","id":"795293697449541632","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293698447638528","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293707960520706","userCountry":"Italy","tweetingCountry":"Italy"}
+{"month":"Nov","year":"2016","date":"06","id":"795293708426027009","userCountry":"Brazil","tweetingCountry":"Brazil"}
+{"month":"Nov","year":"2016","date":"06","id":"795293715598282752","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293722200018944","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293726105042944","userCountry":"Malaysia","tweetingCountry":"Thailand"}
+{"month":"Nov","year":"2016","date":"06","id":"795293729900761088","userCountry":"Philippines","tweetingCountry":"Philippines"}
+{"month":"Nov","year":"2016","date":"06","id":"795293730345484288","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293731943550977","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293742211153920","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293742341255168","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293747235930112","userCountry":"Bahrain","tweetingCountry":"Bahrain"}
+{"month":"Nov","year":"2016","date":"06","id":"795293753888149505","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293753355300865","userCountry":"Japan","tweetingCountry":"Japan"}
+{"month":"Nov","year":"2016","date":"06","id":"795293765216903168","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293771457961985","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293771399241728","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293773081219072","userCountry":"Iran","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293773165195264","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293806786658304","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293806581071873","userCountry":"Nigeria","tweetingCountry":"Nigeria"}
+{"month":"Nov","year":"2016","date":"06","id":"795293811794530304","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293813703114753","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293830392070144","userCountry":"France","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293853645438976","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293846481629189","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293860968669184","userCountry":"Italy","tweetingCountry":"Italy"}
+{"month":"Nov","year":"2016","date":"06","id":"795293867855794176","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293878060466178","userCountry":"Republic of the Congo","tweetingCountry":"Republic of the Congo"}
+{"month":"Nov","year":"2016","date":"06","id":"795293863753764864","userCountry":"Spain","tweetingCountry":"Spain"}
+{"month":"Nov","year":"2016","date":"06","id":"795293876277760000","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293884997844993","userCountry":"Sweden","tweetingCountry":"Sweden"}
+{"month":"Nov","year":"2016","date":"06","id":"795293894716100608","userCountry":"Brazil","tweetingCountry":"Italy"}
+{"month":"Nov","year":"2016","date":"06","id":"795293901103865857","userCountry":"Philippines","tweetingCountry":"Philippines"}
+{"month":"Nov","year":"2016","date":"06","id":"795293912814456832","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293923996565508","userCountry":"Finland","tweetingCountry":"Antarctica"}
+{"month":"Nov","year":"2016","date":"06","id":"795293922939600897","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293931353341952","userCountry":"Finland","tweetingCountry":"Liechtenstein"}
+{"month":"Nov","year":"2016","date":"06","id":"795293931940421634","userCountry":"Philippines","tweetingCountry":"Philippines"}
+{"month":"Nov","year":"2016","date":"06","id":"795293930023579648","userCountry":"India","tweetingCountry":"India"}
+{"month":"Nov","year":"2016","date":"06","id":"795293927796604929","userCountry":"Finland","tweetingCountry":"Italy"}
+{"month":"Nov","year":"2016","date":"06","id":"795293935136604160","userCountry":"Finland","tweetingCountry":"Vatican City"}
+{"month":"Nov","year":"2016","date":"06","id":"795293949510287363","userCountry":"Indonesia","tweetingCountry":"Indonesia"}
+{"month":"Nov","year":"2016","date":"06","id":"795293949590142977","userCountry":"Ecuador","tweetingCountry":"Ecuador"}
+{"month":"Nov","year":"2016","date":"06","id":"795293945903325186","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293958213505025","userCountry":"Nepal","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293952630890496","userCountry":"Mexico","tweetingCountry":"Mexico"}
+{"month":"Nov","year":"2016","date":"06","id":"795293970733600768","userCountry":"South Africa","tweetingCountry":"South Africa"}
+{"month":"Nov","year":"2016","date":"06","id":"795293966040080384","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293973904551936","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795293979495411712","userCountry":"Philippines","tweetingCountry":"Philippines"}
+{"month":"Nov","year":"2016","date":"06","id":"795293975196241922","userCountry":"Italy","tweetingCountry":"Italy"}
+{"month":"Nov","year":"2016","date":"06","id":"795293985434501121","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294002094505988","userCountry":"Egypt","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294006989066240","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795293997543620608","userCountry":"Nigeria","tweetingCountry":"Nigeria"}
+{"month":"Nov","year":"2016","date":"06","id":"795294011187691520","userCountry":"The Bahamas","tweetingCountry":"The Bahamas"}
+{"month":"Nov","year":"2016","date":"06","id":"795294013494435841","userCountry":"United Kingdom","tweetingCountry":"Portugal"}
+{"month":"Nov","year":"2016","date":"06","id":"795294017852424193","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294037259341824","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294038547197952","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294042733051908","userCountry":"United States","tweetingCountry":"Hong Kong"}
+{"month":"Nov","year":"2016","date":"06","id":"795294045589250048","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294053768302592","userCountry":"Turkey","tweetingCountry":"Cyprus"}
+{"month":"Nov","year":"2016","date":"06","id":"795294057471688704","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294080821391360","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294101075795968","userCountry":"Indonesia","tweetingCountry":"Indonesia"}
+{"month":"Nov","year":"2016","date":"06","id":"795294088912392192","userCountry":"France","tweetingCountry":"France"}
+{"month":"Nov","year":"2016","date":"06","id":"795294088874426368","userCountry":"France","tweetingCountry":"France"}
+{"month":"Nov","year":"2016","date":"06","id":"795294087150641152","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294131283234818","userCountry":"Italy","tweetingCountry":"Italy"}
+{"month":"Nov","year":"2016","date":"06","id":"795294140519116801","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294126916845568","userCountry":"Marshall Islands","tweetingCountry":"India"}
+{"month":"Nov","year":"2016","date":"06","id":"795294131144667137","userCountry":"Spain","tweetingCountry":"Spain"}
+{"month":"Nov","year":"2016","date":"06","id":"795294144771932161","userCountry":"Kenya","tweetingCountry":"Tanzania"}
+{"month":"Nov","year":"2016","date":"06","id":"795294178272018433","userCountry":"Malaysia","tweetingCountry":"Malaysia"}
+{"month":"Nov","year":"2016","date":"06","id":"795294160727195649","userCountry":"South Africa","tweetingCountry":"South Africa"}
+{"month":"Nov","year":"2016","date":"06","id":"795294168377622528","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294203131461632","userCountry":"Indonesia","tweetingCountry":"Indonesia"}
+{"month":"Nov","year":"2016","date":"06","id":"795294180952145920","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795294190167003138","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294185318445056","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294205815980036","userCountry":"Ireland","tweetingCountry":"Ireland"}
+{"month":"Nov","year":"2016","date":"06","id":"795294198597566464","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795294200761909248","userCountry":"Indonesia","tweetingCountry":"Indonesia"}
+{"month":"Nov","year":"2016","date":"06","id":"795294236468006912","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795294207678316544","userCountry":"Malaysia","tweetingCountry":"Malaysia"}
+{"month":"Nov","year":"2016","date":"06","id":"795294242390220801","userCountry":"United States","tweetingCountry":"Myanmar (Burma)"}
+{"month":"Nov","year":"2016","date":"06","id":"795294229195001857","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795294228003684352","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294265865687040","userCountry":"Philippines","tweetingCountry":"Philippines"}
+{"month":"Nov","year":"2016","date":"06","id":"795294242998521856","userCountry":"Indonesia","tweetingCountry":"Hong Kong"}
+{"month":"Nov","year":"2016","date":"06","id":"795294282789847040","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294262355079169","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294278813622272","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294273155502080","userCountry":"Serbia","tweetingCountry":"Serbia"}
+{"month":"Nov","year":"2016","date":"06","id":"795294290415075328","userCountry":"India","tweetingCountry":"India"}
+{"month":"Nov","year":"2016","date":"06","id":"795294292524802048","userCountry":"United States","tweetingCountry":"Brazil"}
+{"month":"Nov","year":"2016","date":"06","id":"795294279274991616","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294303937380353","userCountry":"United States","tweetingCountry":"Indonesia"}
+{"month":"Nov","year":"2016","date":"06","id":"795294315270602753","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294306315579392","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294317355081728","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"06","id":"795294306860957700","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Nov","year":"2016","date":"06","id":"795294354545909760","userCountry":"India","tweetingCountry":"India"}
+{"month":"Nov","year":"2016","date":"06","id":"795294333415002112","userCountry":"Ecuador","tweetingCountry":"Ecuador"}
+{"month":"Nov","year":"2016","date":"06","id":"795294338163048448","userCountry":"South Africa","tweetingCountry":"South Africa"}
+{"month":"Nov","year":"2016","date":"06","id":"795294350389497856","userCountry":"South Africa","tweetingCountry":"South Africa"}
+{"month":"Nov","year":"2016","date":"06","id":"795294404818804738","userCountry":"United States","tweetingCountry":"Barbados"}

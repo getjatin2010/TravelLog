@@ -1,8 +1,6 @@
-import GoogleSchema.LocationResults;
 import com.google.gson.Gson;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -18,7 +16,7 @@ public class CreateTempFile {
     public String dataFile;
     public String tempFile;
     public HashMap<String,Integer> savingData;
-    public List<int[]> result;
+    public AprioriResult aprioriResult;
 
     CreateTempFile(String dataFile, String tempFile, boolean onlyInternational, int timewise) throws FileNotFoundException {
         this.onlyInternational  = onlyInternational;
@@ -33,27 +31,45 @@ public class CreateTempFile {
         emptyFile(tempFile);
         readFile(dataFile);
         System.out.println("Effective Data Processed :" + dataValues++);
+
         runAprori();
-        printResult();
+
+        printResult(aprioriResult.result.get(3));
+
+        //Poornima Here you can write the code to make the csv file.
+        //Please look at the printResult which converts numbers to countries
+
+        //aprioriResult contains numTransactions and
+        //a HaspMap which contains result
+        //1. which is integer and List of array of ints
+        // ----(Integer represnts number of elements in the transaction)
+        // ----(List of AproriItemSetResult contains arrays of ints  (Each array is a transaciton) and its support
+
     }
 
-    private void printResult()
+    private void printResult(List<AprioriItemsetResult> result)
     {
         Iterator i = result.iterator();
+        int count = 0;
         while (i.hasNext())
         {
-            int[] resultingArray = (int[]) i.next();
+            AprioriItemsetResult aprioriItemsetResult = (AprioriItemsetResult)i.next();
+            int[] resultingArray = aprioriItemsetResult.result;
+
                 for(int k =0 ;k<resultingArray.length ;k++)
                 {
                     System.out.print(searchInSavingData(resultingArray[k])+" ");
                 }
+
+            System.out.print(" Support : "+aprioriItemsetResult.support);
             System.out.println("");
+            count++;
         }
     }
     private void runAprori() throws Exception
     {
         Apriori ap = new Apriori();
-        result = ap.go();
+        aprioriResult = ap.go();
     }
 
 

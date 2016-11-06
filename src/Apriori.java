@@ -4,6 +4,7 @@
 /**
  * Created by poornima on 5/11/16.
  */
+
 import java.io.*;
 import java.util.*;
 
@@ -32,7 +33,12 @@ public class Apriori extends Observable {
 
 
     /** the list of current itemsets */
-    private List<int[]> itemsets ;
+
+
+
+    public int[] count;
+
+    private List<int[]> itemsets;
     /** the name of the transcation file */
     private String transaFile;
     /** number of different items in the dataset */
@@ -41,28 +47,27 @@ public class Apriori extends Observable {
     private int numTransactions;
     /** minimum support for a frequent itemset in percentage, e.g. 0.8 */
     private double minSup;
-
+    List<AprioriItemsetResult> itemsetsResult;
     /** by default, Apriori is used with the command line interface */
-    private boolean usedAsLibrary = false;
 
 
-    /** This is the main interface to use this class as a library */
-    public  Apriori(Observer ob) throws Exception
-    {
-        usedAsLibrary = true;
-        configure();
-        this.addObserver(ob);
-        go();
-    }
+
 
     public  Apriori() throws Exception
     {
         configure();
-
     }
 
     /** starts the algorithm after configuration */
-    public List<int[]> go() throws Exception {
+    public AprioriResult go() throws Exception {
+
+
+
+        //This is where i start creating the result
+        AprioriResult ap ;
+        ap = new AprioriResult();
+        ap.numOfTransactions = numTransactions;
+
         //start timer
         long start = System.currentTimeMillis();
 
@@ -75,9 +80,8 @@ public class Apriori extends Observable {
         {
 
             calculateFrequentItemsets();
-            if(itemsetNumber==3)
-                return itemsets;
-
+            //Every Time we calculate frequentItemSets of size itemsetNumber I add to the result
+            ap.result.put(itemsetNumber,itemsetsResult);
 
             if(itemsets.size()!=0)
             {
@@ -93,16 +97,12 @@ public class Apriori extends Observable {
         log("Execution time is: "+((double)(end-start)/1000) + " seconds.");
         log("Found "+nbFrequentSets+ " frequents sets for support "+(minSup*100)+"% (absolute "+Math.round(numTransactions*minSup)+")");
         log("Done");
-        return null;
+        return ap;
     }
 
     /** triggers actions if a frequent item set has been found  */
     private void foundFrequentItemSet(int[] itemset, int support) {
-        if (usedAsLibrary) {
-            this.setChanged();
-            notifyObservers(itemset);
-        }
-        else {System.out.println(Arrays.toString(itemset) + "  ("+ ((support / (double) numTransactions))+" "+support+")");}
+        System.out.println(Arrays.toString(itemset) + "  ("+ ((support / (double) numTransactions))+" "+support+")");
     }
 
 
@@ -187,11 +187,10 @@ public class Apriori extends Observable {
 
         log("Passing through the data to compute the frequency of " + itemsets.size()+ " itemsets of size "+itemsets.get(0).length);
 
-        List<int[]> frequentCandidates = new ArrayList<int[]>(); //the frequent candidates for the current itemset
-
+        List<int[]> frequentCandidates = new ArrayList<int[]>();
+        itemsetsResult = new ArrayList<>();
         boolean match; //whether the transaction has all the items in an itemset
-        int count[] = new int[itemsets.size()]; //the number of successful matches, initialized by zeros
-
+        count = new int[itemsets.size()]; //the number of successful matches, initialized by zeros
 
         // load the transaction file
         BufferedReader data_in = new BufferedReader(new InputStreamReader(new FileInputStream(transaFile)));
@@ -234,8 +233,16 @@ public class Apriori extends Observable {
             // if the count% is larger than the minSup%, add to the candidate to
             // the frequent candidates
             if ((count[i] / (double) (numTransactions)) >= minSup) {
+
+                //Creating a transaction and saving support and it to the itemsetsResult which will saved above
+                AprioriItemsetResult aprioriItemsetResult = new AprioriItemsetResult();
+                aprioriItemsetResult.result = itemsets.get(i);
+                aprioriItemsetResult.support = count[i];
+                itemsetsResult.add(aprioriItemsetResult);
+
                 foundFrequentItemSet(itemsets.get(i),count[i]);
                 frequentCandidates.add(itemsets.get(i));
+
             }
             //else log("-- Remove candidate: "+ Arrays.toString(candidates.get(i)) + "  is: "+ ((count[i] / (double) numTransactions)));
         }
@@ -283,9 +290,7 @@ public class Apriori extends Observable {
 
     /** outputs a message in Sys.err if not used as library */
     private void log(String message) {
-        if (!usedAsLibrary) {
             System.err.println(message);
-        }
     }
 
     /** computes numItems, numTransactions, and sets minSup */

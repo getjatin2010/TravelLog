@@ -10,7 +10,7 @@ public class StartPreProcessing {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         //final  String  line = bf.readLine();
 //        final String  line = "/home/poornima/travelLogData.txt";
-        final String  line = "/home/jatin/travelLogData.txt";
+        final String  line = Constants.TRAVEL_RAW_FILE;
 
 
 
@@ -26,8 +26,8 @@ public class StartPreProcessing {
 
                     // run the Unix "ps -ef" command
                     // using the Runtime exec method:
-                    bw = new BufferedWriter(new FileWriter("/home/jatin/travelLogData.txt", true));
-                    Process p = Runtime.getRuntime().exec("python /home/jatin/twitter_streaming.py");
+                    bw = new BufferedWriter(new FileWriter(Constants.TRAVEL_RAW_FILE, true));
+                    Process p = Runtime.getRuntime().exec(Constants.COMMAND_SCRIPT);
 
                     BufferedReader stdInput = new BufferedReader(new
                             InputStreamReader(p.getInputStream()));
