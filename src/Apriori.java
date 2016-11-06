@@ -31,10 +31,6 @@ import java.util.*;
 public class Apriori extends Observable {
 
 
-    public static void main(String[] args) throws Exception {
-        Apriori ap = new Apriori(args);
-    }
-
     /** the list of current itemsets */
     private List<int[]> itemsets ;
     /** the name of the transcation file */
@@ -46,30 +42,18 @@ public class Apriori extends Observable {
     /** minimum support for a frequent itemset in percentage, e.g. 0.8 */
     private double minSup;
 
-    /** by default, Apriori is used with the command line interface */
-    private boolean usedAsLibrary = false;
-
-    /** This is the main interface to use this class as a library */
-    public  Apriori(String[] args, Observer ob) throws Exception
-    {
-        usedAsLibrary = true;
-        configure(args);
-        this.addObserver(ob);
-        go();
-    }
 
     /** generates the apriori itemsets from a file
      *
      * @param args configuration parameters: args[0] is a filename, args[1] the min support (e.g. 0.8 for 80%)
      */
-    public  Apriori(String[] args) throws Exception
+    public  Apriori() throws Exception
     {
-        configure(args);
-        go();
+        configure();
     }
 
     /** starts the algorithm after configuration */
-    private void go() throws Exception {
+    public List<int[]> go() throws Exception {
         //start timer
         long start = System.currentTimeMillis();
 
@@ -98,40 +82,32 @@ public class Apriori extends Observable {
         log("Execution time is: "+((double)(end-start)/1000) + " seconds.");
         log("Found "+nbFrequentSets+ " frequents sets for support "+(minSup*100)+"% (absolute "+Math.round(numTransactions*minSup)+")");
         log("Done");
+
+        return null;
+
     }
 
     /** triggers actions if a frequent item set has been found  */
     private void foundFrequentItemSet(int[] itemset, int support) {
-        if (usedAsLibrary) {
-            this.setChanged();
-            notifyObservers(itemset);
-        }
-        else {System.out.println(Arrays.toString(itemset) + "  ("+ ((support / (double) numTransactions))+" "+support+")");}
+       System.out.println(Arrays.toString(itemset) + "  ("+ ((support / (double) numTransactions))+" "+support+")");
     }
 
     /** outputs a message in Sys.err if not used as library */
     private void log(String message) {
-        if (!usedAsLibrary) {
             System.err.println(message);
-        }
     }
 
     /** computes numItems, numTransactions, and sets minSup */
-    private void configure(String[] args) throws Exception
+    private void configure() throws Exception
     {
-        // setting transafile
-        if (args.length!=0) transaFile = args[0];
-        else transaFile = "/home/poornima/AprioriData.txt"; // default
+        transaFile = Constants.TEMP_FILE; // default
+        minSup = .0001;
+        if (minSup>1 || minSup<0)
+            throw new Exception("minSup: bad value");
 
-        // setting minsupport
-        if (args.length>=2) minSup=(Double.valueOf(args[1]).doubleValue());
-        else minSup = .01;// by default
-        if (minSup>1 || minSup<0) throw new Exception("minSup: bad value");
-
-
-        // going thourgh the file to compute numItems and  numTransactions
         numItems = 0;
         numTransactions=0;
+
         BufferedReader data_in = new BufferedReader(new FileReader(transaFile));
         while (data_in.ready()) {
             String line=data_in.readLine();

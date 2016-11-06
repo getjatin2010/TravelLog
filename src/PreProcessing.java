@@ -16,7 +16,6 @@ public class PreProcessing {
 
         BufferedReader bf = new BufferedReader((new FileReader(file)));
         String line = "";
-        ArrayList<Tweet> tweets = new ArrayList<>();
         while (READ_FILE)
         {
             line = bf.readLine();
@@ -24,7 +23,7 @@ public class PreProcessing {
             {
                 if(line!=null && line!=" ") {
                     BROLD = true;
-                    storeJson(line, tweets);
+                    storeJson(line);
 
                 }
                 else {
@@ -42,7 +41,7 @@ public class PreProcessing {
             }
         }
     }
-    private static void storeJson(String s, ArrayList<Tweet> tweets) throws IOException {
+    private static void storeJson(String s) throws IOException {
         System.out.print("c");
         Tweet tweet = gson.fromJson(s, Tweet.class);
         boolean checkTweet = checkTweet(tweet);

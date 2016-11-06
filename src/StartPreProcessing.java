@@ -4,12 +4,13 @@ import java.util.Map;
 /**
  * Created by jatin on 18/10/16.
  */
-public class StartClass {
+public class StartPreProcessing {
     public static void main(String args[]) throws Exception
     {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         //final  String  line = bf.readLine();
-        final String  line = "/home/poornima/travelLogData.txt";
+//        final String  line = "/home/poornima/travelLogData.txt";
+        final String  line = "/home/jatin/travelLogData.txt";
 
 
 
@@ -25,8 +26,8 @@ public class StartClass {
 
                     // run the Unix "ps -ef" command
                     // using the Runtime exec method:
-                    bw = new BufferedWriter(new FileWriter("/home/poornima/travelLogData.txt", true));
-                    Process p = Runtime.getRuntime().exec("python /home/poornima/twitter_streaming.py");
+                    bw = new BufferedWriter(new FileWriter("/home/jatin/travelLogData.txt", true));
+                    Process p = Runtime.getRuntime().exec("python /home/jatin/twitter_streaming.py");
 
                     BufferedReader stdInput = new BufferedReader(new
                             InputStreamReader(p.getInputStream()));
@@ -84,4 +85,7 @@ public class StartClass {
 
 
     }
+
+
+
 }
