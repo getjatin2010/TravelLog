@@ -42,14 +42,23 @@ public class Apriori extends Observable {
     /** minimum support for a frequent itemset in percentage, e.g. 0.8 */
     private double minSup;
 
+    /** by default, Apriori is used with the command line interface */
+    private boolean usedAsLibrary = false;
 
-    /** generates the apriori itemsets from a file
-     *
-     * @param args configuration parameters: args[0] is a filename, args[1] the min support (e.g. 0.8 for 80%)
-     */
+
+    /** This is the main interface to use this class as a library */
+    public  Apriori(Observer ob) throws Exception
+    {
+        usedAsLibrary = true;
+        configure();
+        this.addObserver(ob);
+        go();
+    }
+
     public  Apriori() throws Exception
     {
         configure();
+
     }
 
     /** starts the algorithm after configuration */
@@ -66,6 +75,9 @@ public class Apriori extends Observable {
         {
 
             calculateFrequentItemsets();
+            if(itemsetNumber==3)
+                return itemsets;
+
 
             if(itemsets.size()!=0)
             {
@@ -73,7 +85,6 @@ public class Apriori extends Observable {
                 log("Found "+itemsets.size()+" frequent itemsets of size " + itemsetNumber + " (with support "+(minSup*100)+"%)");;
                 createNewItemsetsFromPreviousOnes();
             }
-
             itemsetNumber++;
         }
 
@@ -82,68 +93,19 @@ public class Apriori extends Observable {
         log("Execution time is: "+((double)(end-start)/1000) + " seconds.");
         log("Found "+nbFrequentSets+ " frequents sets for support "+(minSup*100)+"% (absolute "+Math.round(numTransactions*minSup)+")");
         log("Done");
-
         return null;
-
     }
 
     /** triggers actions if a frequent item set has been found  */
     private void foundFrequentItemSet(int[] itemset, int support) {
-       System.out.println(Arrays.toString(itemset) + "  ("+ ((support / (double) numTransactions))+" "+support+")");
-    }
-
-    /** outputs a message in Sys.err if not used as library */
-    private void log(String message) {
-            System.err.println(message);
-    }
-
-    /** computes numItems, numTransactions, and sets minSup */
-    private void configure() throws Exception
-    {
-        transaFile = Constants.TEMP_FILE; // default
-        minSup = .0001;
-        if (minSup>1 || minSup<0)
-            throw new Exception("minSup: bad value");
-
-        numItems = 0;
-        numTransactions=0;
-
-        BufferedReader data_in = new BufferedReader(new FileReader(transaFile));
-        while (data_in.ready()) {
-            String line=data_in.readLine();
-            if (line.matches("\\s*")) continue; // be friendly with empty lines
-            numTransactions++;
-            StringTokenizer t = new StringTokenizer(line," ");
-            while (t.hasMoreTokens()) {
-                int x = Integer.parseInt(t.nextToken());
-                //log(x);
-                if (x+1>numItems) numItems=x+1;
-            }
+        if (usedAsLibrary) {
+            this.setChanged();
+            notifyObservers(itemset);
         }
-
-        outputConfig();
-
+        else {System.out.println(Arrays.toString(itemset) + "  ("+ ((support / (double) numTransactions))+" "+support+")");}
     }
 
-    /** outputs the current configuration
-     */
-    private void outputConfig() {
-        //output config info to the user
-        log("Input configuration: "+numItems+" items, "+numTransactions+" transactions, ");
-        log("minsup = "+minSup+"%");
-    }
 
-    /** puts in itemsets all sets of size 1,
-     * i.e. all possibles items of the datasets
-     */
-    private void createItemsetsOfSize1() {
-        itemsets = new ArrayList<int[]>();
-        for(int i=0; i<numItems; i++)
-        {
-            int[] cand = {i};
-            itemsets.add(cand);
-        }
-    }
 
     /**
      * if m is the size of the current itemsets,
@@ -216,19 +178,6 @@ public class Apriori extends Observable {
 
 
 
-    /** put "true" in trans[i] if the integer i is in line */
-    private void line2booleanArray(String line, boolean[] trans) {
-        Arrays.fill(trans, false);
-        StringTokenizer stFile = new StringTokenizer(line, " "); //read a line from the file to the tokenizer
-        //put the contents of that line into the transaction array
-        while (stFile.hasMoreTokens())
-        {
-
-            int parsedVal = Integer.parseInt(stFile.nextToken());
-            trans[parsedVal]=true; //if it is not a 0, assign the value to true
-        }
-    }
-
 
     /** passes through the data to measure the frequency of sets in {link itemsets},
      *  then filters thoses who are under the minimum support (minSup)
@@ -292,6 +241,76 @@ public class Apriori extends Observable {
         }
 
         //new candidates are only the frequent candidates
+
+        //Jatin Added Code
+
         itemsets = frequentCandidates;
     }
+
+
+    /** outputs the current configuration
+     */
+    private void outputConfig() {
+        //output config info to the user
+        log("Input configuration: "+numItems+" items, "+numTransactions+" transactions, ");
+        log("minsup = "+minSup+"%");
+    }
+
+    /** puts in itemsets all sets of size 1,
+     * i.e. all possibles items of the datasets
+     */
+    private void createItemsetsOfSize1() {
+        itemsets = new ArrayList<int[]>();
+        for(int i=0; i<numItems; i++)
+        {
+            int[] cand = {i};
+            itemsets.add(cand);
+        }
+    }
+
+    /** put "true" in trans[i] if the integer i is in line */
+    private void line2booleanArray(String line, boolean[] trans) {
+        Arrays.fill(trans, false);
+        StringTokenizer stFile = new StringTokenizer(line, " "); //read a line from the file to the tokenizer
+        //put the contents of that line into the transaction array
+        while (stFile.hasMoreTokens())
+        {
+
+            int parsedVal = Integer.parseInt(stFile.nextToken());
+            trans[parsedVal]=true; //if it is not a 0, assign the value to true
+        }
+    }
+
+    /** outputs a message in Sys.err if not used as library */
+    private void log(String message) {
+        if (!usedAsLibrary) {
+            System.err.println(message);
+        }
+    }
+
+    /** computes numItems, numTransactions, and sets minSup */
+    private void configure() throws Exception
+    {
+        transaFile = Constants.TEMP_FILE; // default
+        minSup = Constants.MIN_SUPPORT;
+        numItems = 0;
+        numTransactions=0;
+
+        BufferedReader data_in = new BufferedReader(new FileReader(transaFile));
+        while (data_in.ready()) {
+            String line=data_in.readLine();
+            if (line.matches("\\s*")) continue; // be friendly with empty lines
+            numTransactions++;
+            StringTokenizer t = new StringTokenizer(line," ");
+            while (t.hasMoreTokens()) {
+                int x = Integer.parseInt(t.nextToken());
+                //log(x);
+                if (x+1>numItems) numItems=x+1;
+            }
+        }
+
+        outputConfig();
+
+    }
+
 }

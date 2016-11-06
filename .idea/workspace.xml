@@ -2,42 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="692cd3f2-7fdd-45cf-96ca-bbfd3b4eb450" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CreateTempFile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StartMining.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TravelLog/ReadFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TravelLog/StartClass$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TravelLog/StartClass$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TravelLog/StartClass.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/StartClass.java" afterPath="$PROJECT_DIR$/src/StartPreProcessing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/Constants.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GetCountryNameGoogleAPI.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GetCountryNameGoogleAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GetLocationGoogleAPI.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GetLocationGoogleAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/AddressComponent.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/AddressComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Bounds.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Bounds.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Geometry.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Geometry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Location.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Location.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/LocationResults.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/LocationResults.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Northeast.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Northeast.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Northeast_.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Northeast_.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Result.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Result.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Southwest.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Southwest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Southwest_.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Southwest_.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Viewport.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/GoogleSchema/Viewport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/ImpData.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/ImpData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/Place.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/Place.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/PreProcessing.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/PreProcessing.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/Tweet.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/Tweet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/User.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/Apriori.class" afterPath="$PROJECT_DIR$/out/production/TravelLog/Apriori.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TravelLog.iml" afterPath="$PROJECT_DIR$/TravelLog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainData.txt" afterPath="$PROJECT_DIR$/mainData.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TravelLog/test.txt" afterPath="$PROJECT_DIR$/out/production/TravelLog/test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TempFile.txt" afterPath="$PROJECT_DIR$/TempFile.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Apriori.java" afterPath="$PROJECT_DIR$/src/Apriori.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Constants.java" afterPath="$PROJECT_DIR$/src/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NLP.java" afterPath="$PROJECT_DIR$/src/NLP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PreProcessing.java" afterPath="$PROJECT_DIR$/src/PreProcessing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test.txt" afterPath="$PROJECT_DIR$/src/test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CreateTempFile.java" afterPath="$PROJECT_DIR$/src/CreateTempFile.java" />
     </list>
     <ignored path="TravelLog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,15 +43,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Apriori.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Apriori.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Apriori.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-              <folding>
-                <element signature="e#3158#3159#0" expanded="true" />
-                <element signature="e#3205#3206#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="146">
+              <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,18 +56,18 @@
       <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Observer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
+            <state relative-caret-position="65">
               <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartPreProcessing.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StartPreProcessing.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StartPreProcessing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-775">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="-30">
+              <caret line="28" column="89" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,8 +78,8 @@
       <file leaf-file-name="CreateTempFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CreateTempFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            <state relative-caret-position="161">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,31 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NLP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NLP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Place.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Place.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StartMining.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StartMining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="125">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,8 +100,8 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="105">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -209,10 +156,10 @@
         <option value="$PROJECT_DIR$/src/StartPreProcessing.java" />
         <option value="$PROJECT_DIR$/src/RunMining.java" />
         <option value="$PROJECT_DIR$/src/GetResults.java" />
-        <option value="$PROJECT_DIR$/src/Constants.java" />
         <option value="$PROJECT_DIR$/src/StartMining.java" />
         <option value="$PROJECT_DIR$/src/CreateTempFile.java" />
         <option value="$PROJECT_DIR$/src/Apriori.java" />
+        <option value="$PROJECT_DIR$/src/Constants.java" />
       </list>
     </option>
   </component>
@@ -315,7 +262,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StartMining">
     <configuration default="false" name="StartPreProcessing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="StartPreProcessing" />
@@ -612,8 +559,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.StartPreProcessing" />
-        <item index="1" class="java.lang.String" itemvalue="Application.StartMining" />
+        <item index="0" class="java.lang.String" itemvalue="Application.StartMining" />
+        <item index="1" class="java.lang.String" itemvalue="Application.StartPreProcessing" />
         <item index="2" class="java.lang.String" itemvalue="Application.Apriori" />
       </list>
     </recent_temporary>
@@ -654,7 +601,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41765338" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41715977" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -728,7 +675,7 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1025,16 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PreProcessing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="94" column="51" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NlpPropFile.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1043,27 +980,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Observer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
+        <state relative-caret-position="65">
           <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartMining.java">
+    <entry file="file://$PROJECT_DIR$/src/PreProcessing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="240">
+          <caret line="94" column="51" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,20 +1014,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CreateTempFile.java">
+    <entry file="file://$PROJECT_DIR$/src/StartMining.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="125">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartPreProcessing.java">
+    <entry file="file://$PROJECT_DIR$/src/CreateTempFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-775">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="161">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1105,11 +1034,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Apriori.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        <state relative-caret-position="146">
+          <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartPreProcessing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="28" column="89" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="89" />
           <folding>
-            <element signature="e#3158#3159#0" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

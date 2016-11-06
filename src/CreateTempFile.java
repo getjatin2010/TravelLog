@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by jatin on 18/10/16.
@@ -16,6 +18,7 @@ public class CreateTempFile {
     public String dataFile;
     public String tempFile;
     public HashMap<String,Integer> savingData;
+    public List<int[]> result;
 
     CreateTempFile(String dataFile, String tempFile, boolean onlyInternational, int timewise) throws FileNotFoundException {
         this.onlyInternational  = onlyInternational;
@@ -31,11 +34,26 @@ public class CreateTempFile {
         readFile(dataFile);
         System.out.println("Effective Data Processed :" + dataValues++);
         runAprori();
+        printResult();
     }
 
+    private void printResult()
+    {
+        Iterator i = result.iterator();
+        while (i.hasNext())
+        {
+            int[] resultingArray = (int[]) i.next();
+                for(int k =0 ;k<resultingArray.length ;k++)
+                {
+                    System.out.print(searchInSavingData(resultingArray[k])+" ");
+                }
+            System.out.println("");
+        }
+    }
     private void runAprori() throws Exception
     {
         Apriori ap = new Apriori();
+        result = ap.go();
     }
 
 
@@ -91,19 +109,16 @@ public class CreateTempFile {
 
         if(!savingData.containsKey(effectiveDate))
             savingData.put(effectiveDate,savingData.size()+1);
-
         effectiveDateNumber = savingData.get(effectiveDate);
 
 
         if(!savingData.containsKey(userCountry))
             savingData.put(userCountry,savingData.size()+1);
-
         userCountryNumber = savingData.get(userCountry);
 
 
         if(!savingData.containsKey(tweetingCountry))
             savingData.put(tweetingCountry,savingData.size()+1);
-
         tweetingCountryNumber = savingData.get(tweetingCountry);
 
 
@@ -131,6 +146,17 @@ public class CreateTempFile {
         PrintWriter writer = new PrintWriter(file);
         writer.print("");
         writer.close();
+    }
+
+
+    private String searchInSavingData(int i)
+    {
+        for ( String key : savingData.keySet() ) {
+            int k = savingData.get(key);
+                if(k==i)
+                    return key;
+        }
+        return null;
     }
 
 }
