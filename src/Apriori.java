@@ -102,7 +102,7 @@ public class Apriori extends Observable {
 
     /** triggers actions if a frequent item set has been found  */
     private void foundFrequentItemSet(int[] itemset, int support) {
-        System.out.println(Arrays.toString(itemset) + "  ("+ ((support / (double) numTransactions))+" "+support+")");
+     //   System.out.println(Arrays.toString(itemset) + "  ("+ ((support / (double) numTransactions))+" "+support+")");
     }
 
 
@@ -260,7 +260,7 @@ public class Apriori extends Observable {
     private void outputConfig() {
         //output config info to the user
         log("Input configuration: "+numItems+" items, "+numTransactions+" transactions, ");
-        log("minsup = "+minSup+"%");
+        System.out.println("minsup = "+minSup+"%");
     }
 
     /** puts in itemsets all sets of size 1,
@@ -290,7 +290,7 @@ public class Apriori extends Observable {
 
     /** outputs a message in Sys.err if not used as library */
     private void log(String message) {
-            System.err.println(message);
+ //          System.err.println(message);
     }
 
     /** computes numItems, numTransactions, and sets minSup */

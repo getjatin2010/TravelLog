@@ -24,7 +24,14 @@ public class GetCountryNameGoogleAPI {
     static Gson  gson = new Gson();
     static CloseableHttpClient   httpClient = HttpClients.createDefault(); ;
     public static LocationResults executeRequest(String locationName) throws IOException {
-        String requestURL = "https://maps.googleapis.com/maps/api/geocode/json?address="+locationName+"&key="+Constants.GOOGLE_MAPS_API_KEY;
+        int random = (int) (Math.random()*2);
+
+        String requestURL ="";
+        if(random==0)
+            requestURL = "https://maps.googleapis.com/maps/api/geocode/json?address="+locationName+"&key="+Constants.GOOGLE_MAPS_API_KEY;
+        else
+            requestURL = "https://maps.googleapis.com/maps/api/geocode/json?address="+locationName+"&key="+Constants.GOOGLE_MAPS_API_KEY_2;
+
         requestURL = requestURL.replace(" ","%20");
         HttpGet request = new HttpGet(requestURL);
         HttpResponse response = httpClient.execute(request);

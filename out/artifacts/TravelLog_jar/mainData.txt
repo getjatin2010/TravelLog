@@ -1,0 +1,17 @@
+{"month":"Nov","year":"2016","date":"15","id":"798461951009439744","userCountry":"Philippines","tweetingCountry":"Philippines"}
+{"month":"Nov","year":"2016","date":"15","id":"798461958211117056","userCountry":"Greece","tweetingCountry":"Greece"}
+{"month":"Nov","year":"2016","date":"15","id":"798461959997820928","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"15","id":"798461987361538048","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"15","id":"798461995288817664","userCountry":"Poland","tweetingCountry":"Poland"}
+{"month":"Nov","year":"2016","date":"15","id":"798461997994020864","userCountry":"Greece","tweetingCountry":"Greece"}
+{"month":"Nov","year":"2016","date":"15","id":"798462007691411456","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Nov","year":"2016","date":"15","id":"798462010841145344","userCountry":"India","tweetingCountry":"India"}
+{"month":"Nov","year":"2016","date":"15","id":"798462018277740544","userCountry":"Turkey","tweetingCountry":"Romania"}
+{"month":"Nov","year":"2016","date":"15","id":"798462020232232960","userCountry":"India","tweetingCountry":"India"}
+{"month":"Nov","year":"2016","date":"15","id":"798462317059047424","userCountry":"Greece","tweetingCountry":"Greece"}
+{"month":"Nov","year":"2016","date":"15","id":"798462340559732736","userCountry":"Greece","tweetingCountry":"Greece"}
+{"month":"Nov","year":"2016","date":"15","id":"798462342585384960","userCountry":"Philippines","tweetingCountry":"Philippines"}
+{"month":"Nov","year":"2016","date":"15","id":"798462348499398656","userCountry":"Indonesia","tweetingCountry":"Indonesia"}
+{"month":"Nov","year":"2016","date":"15","id":"798462362244104193","userCountry":"Malaysia","tweetingCountry":"Malaysia"}
+{"month":"Nov","year":"2016","date":"15","id":"798462371589066752","userCountry":"Thailand","tweetingCountry":"Thailand"}
+{"month":"Nov","year":"2016","date":"15","id":"798464061029646336","userCountry":"Greece","tweetingCountry":"Greece"}

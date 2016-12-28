@@ -11,15 +11,17 @@ import java.util.List;
 public class CreateTempFile {
     public  Gson gson = new Gson();
     public  int dataValues = 0;
-    public  boolean onlyInternational;
     public  int timewise;
     public String dataFile;
     public String tempFile;
     public HashMap<String,Integer> savingData;
     public AprioriResult aprioriResult;
 
-    CreateTempFile(String dataFile, String tempFile, boolean onlyInternational, int timewise) throws FileNotFoundException {
-        this.onlyInternational  = onlyInternational;
+    public BufferedWriter gui_data_bw = null;
+
+    public BufferedWriter gui_support_data_bw = null;
+
+    CreateTempFile(String dataFile, String tempFile, int timewise) throws FileNotFoundException {
         this.timewise = timewise;
         this.dataFile = dataFile;
         this.tempFile = tempFile;
@@ -28,13 +30,24 @@ public class CreateTempFile {
     }
 
     public void startProcess() throws Exception {
+
+        /*
+
+        IN CONSTANTS:-
+
+         */
+
         emptyFile(tempFile);
         readFile(dataFile);
         System.out.println("Effective Data Processed :" + dataValues++);
 
         runAprori();
 
-        printResult(aprioriResult.result.get(3));
+        printResult(aprioriResult.result.get(1),1);
+
+
+        printResult(aprioriResult.result.get(3),3);
+
 
         //Poornima Here you can write the code to make the csv file.
         //Please look at the printResult which converts numbers to countries
@@ -47,23 +60,108 @@ public class CreateTempFile {
 
     }
 
-    private void printResult(List<AprioriItemsetResult> result)
+    private void printResult(List<AprioriItemsetResult> result,int resultType)
     {
+        String data = "";
+
+        if(resultType==1)
+        {
+
+            try {
+                gui_data_bw = new BufferedWriter(new FileWriter(Constants.GUI_DATA_FILE, false));
+                gui_data_bw.write("\"Country\",\"Support\"");
+                gui_data_bw.newLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        else if(resultType==3)
+        {
+            try {
+                gui_support_data_bw = new BufferedWriter(new FileWriter(Constants.GUI_SUPPORT_DATA_FILE, false));
+                gui_support_data_bw.write("\"Country1\",\"Country2\",\"Support\"");
+                gui_support_data_bw.newLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
         Iterator i = result.iterator();
         int count = 0;
         while (i.hasNext())
         {
+            data="";
             AprioriItemsetResult aprioriItemsetResult = (AprioriItemsetResult)i.next();
             int[] resultingArray = aprioriItemsetResult.result;
 
-                for(int k =0 ;k<resultingArray.length ;k++)
-                {
+            for(int k =0 ;k<resultingArray.length ;k++)
+            {
+
+                if(resultType==3) {
                     System.out.print(searchInSavingData(resultingArray[k])+" ");
+                    if (k != 0) {
+                        data = data + "\"" + searchInSavingData(resultingArray[k]) + "\"" + ",";
+                    }
                 }
 
-            System.out.print(" Support : "+aprioriItemsetResult.support);
-            System.out.println("");
+                if(resultType==1)
+                {
+                    data = "\"" + searchInSavingData(resultingArray[k]) + "\"" + ",";
+                }
+            }
+            if(resultType==3) {
+                System.out.print(" Support : " + aprioriItemsetResult.support);
+            }
+            data = data+aprioriItemsetResult.support;
+
+            if(resultType==1)
+            {
+                if (count != 0) {
+                    try {
+                        gui_data_bw.write(data);
+                        gui_data_bw.newLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            }
+            if(resultType==3)
+            {
+                try {
+                    gui_support_data_bw.write(data);
+                    gui_support_data_bw.newLine();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                System.out.println("");
+            }
             count++;
+
+        }
+
+        if(resultType==1)
+        {
+
+            try {
+                gui_data_bw.flush();
+                gui_data_bw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if(resultType==3)
+        {
+
+            try {
+                gui_support_data_bw.flush();
+                gui_support_data_bw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
     private void runAprori() throws Exception
@@ -102,11 +200,10 @@ public class CreateTempFile {
         int effectiveDateNumber=0;
 
 
-        if(onlyInternational==true)
-        {
-            if(userCountry==tweetingCountry)
-                return;
-        }
+
+        if(userCountry.equals(tweetingCountry))
+            return;
+
 
         if(timewise==0)
         {
@@ -169,8 +266,8 @@ public class CreateTempFile {
     {
         for ( String key : savingData.keySet() ) {
             int k = savingData.get(key);
-                if(k==i)
-                    return key;
+            if(k==i)
+                return key;
         }
         return null;
     }

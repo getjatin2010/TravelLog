@@ -49,29 +49,58 @@ public class PreProcessing {
             System.out.println();
             System.out.println(tweet.created_at);
             LocationResults locationResults = null;
-            if(tweet.place.full_name!=null)
+            String location =null;
+
+            String tweetingLocation = null;
+            if(tweet.place.country!=null)
             {
-                locationResults = GetCountryNameGoogleAPI.executeRequest(tweet.place.full_name);
+                location = tweet.place.country;
+
+                if(Constants.cityCountry.containsKey(location))
+                    tweetingLocation =   Constants.cityCountry.get(location);
+                else
+                    locationResults = GetCountryNameGoogleAPI.executeRequest(tweet.place.country);
             }
+
 
             else if(tweet.place.name!=null)
             {
-                locationResults = GetCountryNameGoogleAPI.executeRequest(tweet.place.name);
+                location = tweet.place.name;
+
+                if(Constants.cityCountry.containsKey(location))
+                    tweetingLocation =   Constants.cityCountry.get(location);
+                else
+                    locationResults = GetCountryNameGoogleAPI.executeRequest(tweet.place.name);
+
             }
 
-            else if(tweet.place.country!=null)
+
+            else if(tweet.place.full_name!=null)
             {
-                locationResults = GetCountryNameGoogleAPI.executeRequest(tweet.place.country);
-            }
-            String tweetingLocation = GetLocationGoogleAPI.getCountry(locationResults);
-            System.out.println("TweetingCountry: "+tweetingLocation);
+                location = tweet.place.full_name;
 
+                if(Constants.cityCountry.containsKey(location))
+                    tweetingLocation =   Constants.cityCountry.get(location);
+                else
+                locationResults = GetCountryNameGoogleAPI.executeRequest(tweet.place.full_name);
+
+            }
+
+
+
+            if(tweetingLocation ==null)
+                tweetingLocation = GetLocationGoogleAPI.getCountry(locationResults);
+
+
+            System.out.println("TweetingCountry: "+tweetingLocation);
             locationResults = GetCountryNameGoogleAPI.executeRequest(tweet.user.location);
             String userLocation = GetLocationGoogleAPI.getCountry(locationResults);
             System.out.println("UserCountry: "+userLocation);
 
             if(tweetingLocation!=null && userLocation!=null)
             {
+                if(!Constants.cityCountry.containsKey(location))
+                Constants.cityCountry.put(location,tweetingLocation);
                 ImpData data = new ImpData();
                 data.id = tweet.id;
                 data.month = tweet.created_at.substring(4,7);
@@ -92,7 +121,7 @@ public class PreProcessing {
 
         try {
             // APPEND MODE SET HERE
-            bw = new BufferedWriter(new FileWriter("mainData.txt", true));
+            bw = new BufferedWriter(new FileWriter(Constants.MAIN_DATA, true));
             bw.write(json);
             bw.newLine();
             bw.flush();
