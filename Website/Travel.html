@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="jquery.csv.js"></script>
+    <script type="text/javascript">
+      google.charts.load('upcoming', {'packages':['geochart']});
+      google.charts.load("current", {packages:['corechart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        $.get("data.csv", function(csvString) {
+      // transform the CSV string into a 2-dimensional array
+      var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+
+      // this new DataTable object holds all the data
+      var data = new google.visualization.arrayToDataTable(arrayData);
+
+      // this view can select a subset of the data at a time
+      var data = new google.visualization.DataView(data);
+      //data.setColumns([0,1]);
+
+     // set chart options
+     var options = {
+                    backgroundColor: '#bdbfd9',
+                    datalessRegionColor: 'white',
+                     colorAxis: {colors: ['#fffab0','yellow', 'red']}
+                  };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+        
+        
+        google.visualization.events.addListener(chart, 'select', function() {
+	    var selectedItem = chart.getSelection()[0];
+	    if (selectedItem) {
+	      var country = data.getValue(selectedItem.row, 0);
+	      var country_support = data.getValue(selectedItem.row, 1);
+	      
+	      	google.charts.setOnLoadCallback(drawChart(country,country_support));
+	      
+	    }
+
+  });
+  });
+
+        //initialize();
+}
+
+function drawChart(country,country_support) 
+{
+
+	
+	$.get("support_data.csv", function(csvString) 
+        {
+        	// transform the CSV string into a 2-dimensional array
+	      var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+	      
+	      console.log(arrayData);
+
+	      // this new DataTable object holds all the data
+	      //var data = new google.visualization.arrayToDataTable(arrayData);
+	      
+	      //console.log(data);
+	      
+	      var country_data = new google.visualization.DataTable();
+	      // Declare columns
+	      
+	       country_data.addColumn('string', 'Country');
+	       country_data.addColumn('number','Confidence');
+	       
+	       //console.log(country_data);
+	       
+	    
+	      
+	       var numRows = arrayData.length;
+	      
+	      for (var i = 1; i < numRows; i++)
+		    {
+		    	console.log(arrayData[i]);
+		    	
+			if (arrayData[i][0]==country)
+			{
+			country_data.addRow([arrayData[i][1],arrayData[i][2]/country_support]);
+			}
+			else if(arrayData[i][1]==country)
+			{
+			country_data.addRow([arrayData[i][0],arrayData[i][2]/country_support]);
+			}
+		    }
+	      
+	
+	      // this view can select a subset of the data at a time
+	      var data = new google.visualization.DataView(country_data);
+	      
+	      var view = new google.visualization.DataView(data);
+	      view.setColumns([0,1]);
+
+                       var options = {
+			title: "CONFIDENCE OF "+country+" WITH THE WORLD: ",
+			width: 800,
+			height: 300,
+			bar: {groupWidth: "90%"},
+			axes: {
+			    x: {
+			      0: { side: 'top', label: 'White to move'} // Top x-axis.
+			    }
+			  },
+			legend: { position: "none" },
+		      };
+		      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+		      chart.draw(view, options);
+	});
+  }
+
+    </script>
+  </head>
+  <body>
+  	<div style="width: 100%; padding-left:40%;color: #7c795d; font-family: 'Trocchi', serif; font-size: 65px; font-weight: normal; line-height: 48px;margin-bottom:2%;">Travel Log</div>
+    <div id="regions_div" style="width: 100%; height: 450px;"></div>
+    <div id="columnchart_values" style="width: 100%; height: 250px;margin-left:320px;"></div>
+  </body>
+</html>

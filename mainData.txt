@@ -2119,3 +2119,10 @@
 {"month":"Nov","year":"2016","date":"15","id":"798587324699291648","userCountry":"Brazil","tweetingCountry":"Brazil"}
 {"month":"Nov","year":"2016","date":"15","id":"798587337131360256","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
 {"month":"Nov","year":"2016","date":"15","id":"798587337949097984","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
+{"month":"Dec","year":"2016","date":"28","id":"814133346146123777","userCountry":"United Kingdom","tweetingCountry":"Norway"}
+{"month":"Dec","year":"2016","date":"28","id":"814133347844759552","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Dec","year":"2016","date":"28","id":"814133352697458688","userCountry":"Malaysia","tweetingCountry":"Malaysia"}
+{"month":"Dec","year":"2016","date":"28","id":"814133353209360384","userCountry":"Brazil","tweetingCountry":"Brazil"}
+{"month":"Dec","year":"2016","date":"28","id":"814133356904509440","userCountry":"United States","tweetingCountry":"United States"}
+{"month":"Dec","year":"2016","date":"28","id":"814133357600796680","userCountry":"Ireland","tweetingCountry":"United Kingdom"}
+{"month":"Dec","year":"2016","date":"28","id":"814133364705918977","userCountry":"United Kingdom","tweetingCountry":"United Kingdom"}
